@@ -1,0 +1,16 @@
+# Adapted from http://adaptivepatchwork.com/2012/03/01/mind-the-end-of-your-line/
+# These files are text and should be normalized (convert crlf =&gt; lf)
+*.dxf           text
+*.md            text
+.gitattributes  text
+.gitignore      text
+
+# Images and proprietary formats not easily read in a text editor should be
+# treated as binary, (binary is a macro for -text -diff)
+*.jpg           binary
+*.pdf           binary
+*.skp           binary
+
+# *.skp are SketchUp ( http://en.wikipedia.org/wiki/SketchUp ) files,
+# *.dxf are AutoCAD ( http://en.wikipedia.org/wiki/AutoCAD ) files
+# see also ( http://en.wikipedia.org/wiki/AutoCAD_DXF )
